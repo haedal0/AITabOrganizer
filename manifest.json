@@ -1,0 +1,17 @@
+{
+    "name": "AI Tab Organizer",
+    "description": "AI-powered tab grouping",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "permissions": ["tabs", "tabGroups"],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "host_permissions": ["https://api.openai.com/v1/responses"]
+}
